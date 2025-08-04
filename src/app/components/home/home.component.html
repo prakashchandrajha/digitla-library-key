@@ -1,0 +1,48 @@
+<div class="home-container">
+  <div class="home-header">
+    <h1>📚 Digital Library</h1>
+    <div class="user-info">
+      <span class="welcome-text">Welcome to Digital Library!</span>
+      <button 
+        class="logout-button" 
+        (click)="onLogout()" 
+        [disabled]="isLoading">
+        <span class="button-icon">🚪</span>
+        <span class="button-text">
+          {{ isLoading ? 'Logging out...' : 'Logout' }}
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <div class="home-content">
+    <div class="welcome-card">
+      <h2>🎉 Welcome to Digital Library!</h2>
+      <p>This is the home page of your digital library application.</p>
+      
+      <div class="user-details">
+        <h3>Application Status:</h3>
+        <div class="detail-item">
+          <strong>Status:</strong> Basic UI is working
+        </div>
+        <div class="detail-item">
+          <strong>Authentication:</strong> Direct Keycloak redirects
+        </div>
+        <div class="detail-item">
+          <strong>Next Step:</strong> Test login/register buttons
+        </div>
+      </div>
+    </div>
+
+    <div class="features-card">
+      <h3>🔐 Keycloak Integration</h3>
+      <ul>
+        <li>✅ Direct redirects to Keycloak</li>
+        <li>✅ Login functionality</li>
+        <li>✅ Registration functionality</li>
+        <li>✅ Logout functionality</li>
+        <li>✅ Beautiful UI design</li>
+      </ul>
+    </div>
+  </div>
+</div> 

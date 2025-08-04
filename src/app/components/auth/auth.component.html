@@ -1,0 +1,37 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <div class="auth-header">
+      <h1>🔐 Digital Library</h1>
+      <p>Welcome to your digital library experience</p>
+    </div>
+    
+    <div class="auth-content">
+      <div class="auth-buttons">
+        <button 
+          class="auth-button login-button" 
+          (click)="onLogin()" 
+          [disabled]="isLoading">
+          <span class="button-icon">🔑</span>
+          <span class="button-text">
+            {{ isLoading ? 'Redirecting...' : 'Login' }}
+          </span>
+        </button>
+        
+        <button 
+          class="auth-button register-button" 
+          (click)="onRegister()" 
+          [disabled]="isLoading">
+          <span class="button-icon">📝</span>
+          <span class="button-text">
+            {{ isLoading ? 'Redirecting...' : 'Register' }}
+          </span>
+        </button>
+      </div>
+      
+      <div class="auth-info">
+        <p>🔒 Secure authentication powered by Keycloak</p>
+        <p>Centralized user management with SSO support</p>
+      </div>
+    </div>
+  </div>
+</div> 
